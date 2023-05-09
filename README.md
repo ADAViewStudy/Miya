@@ -1,2 +1,6 @@
-# MakingViewStudy
-swiftUI를 활용하여 뷰를 만들어보고 공부하는 저장소입니다. 
+# 📙MakingViewStudy
+
+## 📒 swiftUI
+project | period | branch | learning log
+|:-:|:-:|:-:|:-:|
+alarm | 2022-5-9 ~ 2022-5-17 | alarm1 |
