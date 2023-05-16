@@ -14,6 +14,7 @@
 		03A7554A2A12850900AF95BB /* ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755492A12850900AF95BB /* ClockTests.swift */; };
 		03A755542A12850900AF95BB /* ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755532A12850900AF95BB /* ClockUITests.swift */; };
 		03A755562A12850900AF95BB /* ClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755552A12850900AF95BB /* ClockUITestsLaunchTests.swift */; };
+		03A755632A12862300AF95BB /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755622A12862300AF95BB /* AlarmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		03A7554F2A12850900AF95BB /* ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A755532A12850900AF95BB /* ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockUITests.swift; sourceTree = "<group>"; };
 		03A755552A12850900AF95BB /* ClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03A755622A12862300AF95BB /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				03A755382A12850800AF95BB /* ClockApp.swift */,
 				03A7553A2A12850800AF95BB /* ContentView.swift */,
+				03A755622A12862300AF95BB /* AlarmView.swift */,
 				03A7553C2A12850900AF95BB /* Assets.xcassets */,
 				03A7553E2A12850900AF95BB /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A7553B2A12850800AF95BB /* ContentView.swift in Sources */,
+				03A755632A12862300AF95BB /* AlarmView.swift in Sources */,
 				03A755392A12850800AF95BB /* ClockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
