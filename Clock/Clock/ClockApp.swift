@@ -11,7 +11,9 @@ import SwiftUI
 struct ClockApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AlarmView()
+                .environment(\.colorScheme, .dark)
+                .accentColor(.orange)
         }
     }
 }
