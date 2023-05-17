@@ -19,6 +19,7 @@
 		03A7556B2A13E8D500AF95BB /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */; };
 		03A7556D2A1475A100AF95BB /* RepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556C2A1475A100AF95BB /* RepeatView.swift */; };
 		03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556E2A14761C00AF95BB /* SoundView.swift */; };
+		03A755712A14A71100AF95BB /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755702A14A71100AF95BB /* Day.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
 		03A7556C2A1475A100AF95BB /* RepeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatView.swift; sourceTree = "<group>"; };
 		03A7556E2A14761C00AF95BB /* SoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundView.swift; sourceTree = "<group>"; };
+		03A755702A14A71100AF95BB /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				03A755382A12850800AF95BB /* ClockApp.swift */,
-				03A7553A2A12850800AF95BB /* ContentView.swift */,
-				03A755622A12862300AF95BB /* AlarmView.swift */,
-				03A755682A13B84500AF95BB /* AlarmListView.swift */,
-				03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */,
-				03A7556E2A14761C00AF95BB /* SoundView.swift */,
-				03A7556C2A1475A100AF95BB /* RepeatView.swift */,
+				03A755732A14A72B00AF95BB /* Views */,
+				03A755722A14A71900AF95BB /* Models */,
 				03A7553C2A12850900AF95BB /* Assets.xcassets */,
 				03A7553E2A12850900AF95BB /* Preview Content */,
 			);
@@ -140,6 +138,27 @@
 				03A755552A12850900AF95BB /* ClockUITestsLaunchTests.swift */,
 			);
 			path = ClockUITests;
+			sourceTree = "<group>";
+		};
+		03A755722A14A71900AF95BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03A755702A14A71100AF95BB /* Day.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03A755732A14A72B00AF95BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03A7553A2A12850800AF95BB /* ContentView.swift */,
+				03A755622A12862300AF95BB /* AlarmView.swift */,
+				03A755682A13B84500AF95BB /* AlarmListView.swift */,
+				03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */,
+				03A7556E2A14761C00AF95BB /* SoundView.swift */,
+				03A7556C2A1475A100AF95BB /* RepeatView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +293,7 @@
 			files = (
 				03A7556B2A13E8D500AF95BB /* AddAlarmView.swift in Sources */,
 				03A7553B2A12850800AF95BB /* ContentView.swift in Sources */,
+				03A755712A14A71100AF95BB /* Day.swift in Sources */,
 				03A755632A12862300AF95BB /* AlarmView.swift in Sources */,
 				03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */,
 				03A7556D2A1475A100AF95BB /* RepeatView.swift in Sources */,
