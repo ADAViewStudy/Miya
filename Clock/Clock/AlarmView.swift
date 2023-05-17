@@ -27,6 +27,7 @@ struct AlarmView: View {
         static var previews: some View {
             AlarmView()
                 .environment(\.colorScheme, .dark)
+                .accentColor(.orange)
         }
     }
 }
