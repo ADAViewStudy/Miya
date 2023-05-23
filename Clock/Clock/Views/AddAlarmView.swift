@@ -12,6 +12,7 @@ struct AddAlarmView: View {
     @State private var isSnoozeOn = false
     @State private var label: String = ""
     @Environment(\.dismiss) var dismiss
+    @State private var selectedDays = Set<String>()
     
     var body: some View {
         NavigationView {
@@ -22,16 +23,18 @@ struct AddAlarmView: View {
                 List {
                     HStack {
                         Text("Repeat")
-                        Spacer()
-                        NavigationLink(destination: RepeatView()) {
+                        NavigationLink(destination: RepeatView(selectedDays: $selectedDays)) {
+                            Text(showSelectedDays())
+                                .foregroundColor(Color(UIColor.lightGray))
+                                .frame(maxWidth: .infinity, alignment: .trailing)
                         }
                     }
-                    HStack() {
+                    HStack {
                         Text("Label")
                         Spacer()
                         TextField("Alarm", text: $label)
                             .multilineTextAlignment(.trailing)
-                            
+                        
                     }
                     HStack {
                         Text("Sound")
@@ -50,13 +53,27 @@ struct AddAlarmView: View {
                     dismiss()
                 })
                 .navigationBarTitle("Add alarm", displayMode: .inline)
-                .navigationBarItems(trailing: Button("Save") {
+                .navigationBarItems(trailing: Button{
+                    
+                } label : {
+                    Text("Save")
+                        .bold()
                 })
             }
         }
     }
+    private func showSelectedDays() -> String {
+        let sortedDays = selectedDays.sorted()
+        
+        if sortedDays.count == 1 {
+            return sortedDays.joined()
+        }
+        else {
+            let abbreviatedDays = sortedDays.map { String($0.prefix(3))}
+            return abbreviatedDays.joined(separator: " ")
+        }
+    }
 }
-
 struct AddAlarmView_Previews: PreviewProvider {
     static var previews: some View {
         AddAlarmView()
@@ -64,3 +81,5 @@ struct AddAlarmView_Previews: PreviewProvider {
             .accentColor(.orange)
     }
 }
+
+

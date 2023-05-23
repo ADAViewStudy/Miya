@@ -19,7 +19,8 @@
 		03A7556B2A13E8D500AF95BB /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */; };
 		03A7556D2A1475A100AF95BB /* RepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556C2A1475A100AF95BB /* RepeatView.swift */; };
 		03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556E2A14761C00AF95BB /* SoundView.swift */; };
-		03A755712A14A71100AF95BB /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755702A14A71100AF95BB /* Day.swift */; };
+		03A755752A14B1F600AF95BB /* Ringtones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755742A14B1F600AF95BB /* Ringtones.swift */; };
+		03A755772A14B2E800AF95BB /* VibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755762A14B2E800AF95BB /* VibrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,8 @@
 		03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
 		03A7556C2A1475A100AF95BB /* RepeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatView.swift; sourceTree = "<group>"; };
 		03A7556E2A14761C00AF95BB /* SoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundView.swift; sourceTree = "<group>"; };
-		03A755702A14A71100AF95BB /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		03A755742A14B1F600AF95BB /* Ringtones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtones.swift; sourceTree = "<group>"; };
+		03A755762A14B2E800AF95BB /* VibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +145,7 @@
 		03A755722A14A71900AF95BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				03A755702A14A71100AF95BB /* Day.swift */,
+				03A755742A14B1F600AF95BB /* Ringtones.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 				03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */,
 				03A7556E2A14761C00AF95BB /* SoundView.swift */,
 				03A7556C2A1475A100AF95BB /* RepeatView.swift */,
+				03A755762A14B2E800AF95BB /* VibrationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,10 +296,11 @@
 			files = (
 				03A7556B2A13E8D500AF95BB /* AddAlarmView.swift in Sources */,
 				03A7553B2A12850800AF95BB /* ContentView.swift in Sources */,
-				03A755712A14A71100AF95BB /* Day.swift in Sources */,
 				03A755632A12862300AF95BB /* AlarmView.swift in Sources */,
 				03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */,
+				03A755772A14B2E800AF95BB /* VibrationView.swift in Sources */,
 				03A7556D2A1475A100AF95BB /* RepeatView.swift in Sources */,
+				03A755752A14B1F600AF95BB /* Ringtones.swift in Sources */,
 				03A755692A13B84500AF95BB /* AlarmListView.swift in Sources */,
 				03A755392A12850800AF95BB /* ClockApp.swift in Sources */,
 			);
