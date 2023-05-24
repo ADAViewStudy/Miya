@@ -9,8 +9,8 @@ import SwiftUI
 
 
 struct AlarmListView: View {
-    @State private var isAlarmOn = false
     @State private var isAddAlarmViewPresented = false
+    @State var isAlarmSet = false
     
     var body: some View {
         NavigationView {
@@ -56,9 +56,9 @@ struct AlarmListView: View {
                                 Text("Alarm")
                                     .font(.callout)
                             }
-                            .foregroundColor(isAlarmOn ? .white : .gray)
+                            .foregroundColor(isAlarmSet ? .white : .gray)
                             Spacer()
-                            Toggle(isOn: $isAlarmOn) {
+                            Toggle(isOn: $isAlarmSet) {
                             }
                         }
                     }
@@ -73,7 +73,7 @@ struct AlarmListView: View {
             .listStyle(.plain)
         }
         .sheet(isPresented: self.$isAddAlarmViewPresented) {
-            AddAlarmView()
+            AddAlarmView(isAlarmSet: $isAlarmSet)
                 .environment(\.colorScheme, .dark)
                 .accentColor(.orange)
         }

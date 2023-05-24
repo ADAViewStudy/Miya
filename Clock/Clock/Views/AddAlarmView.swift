@@ -13,6 +13,7 @@ struct AddAlarmView: View {
     @State private var label: String = ""
     @Environment(\.dismiss) var dismiss
     @State private var selectedDays = Set<String>()
+    @Binding var isAlarmSet : Bool
     
     var body: some View {
         NavigationView {
@@ -54,7 +55,8 @@ struct AddAlarmView: View {
                 })
                 .navigationBarTitle("Add alarm", displayMode: .inline)
                 .navigationBarItems(trailing: Button{
-                    
+                    isAlarmSet.toggle()
+                    dismiss()
                 } label : {
                     Text("Save")
                         .bold()
@@ -74,12 +76,15 @@ struct AddAlarmView: View {
         }
     }
 }
-struct AddAlarmView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddAlarmView()
-            .environment(\.colorScheme, .dark)
-            .accentColor(.orange)
-    }
-}
-
-
+//struct AddAlarmView_Previews: PreviewProvider {
+//    @Binding var isAlarmSet : Bool
+//    @State var isAlarmSet = false
+//
+//    static var previews: some View {
+//        AddAlarmView(isAlarmSet: $isAlarmSet)
+//            .environment(\.colorScheme, .dark)
+//            .accentColor(.orange)
+//    }
+//}
+//
+//
