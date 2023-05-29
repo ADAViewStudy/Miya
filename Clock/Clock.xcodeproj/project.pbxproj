@@ -21,6 +21,8 @@
 		03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556E2A14761C00AF95BB /* SoundView.swift */; };
 		03A755752A14B1F600AF95BB /* Ringtones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755742A14B1F600AF95BB /* Ringtones.swift */; };
 		03A755772A14B2E800AF95BB /* VibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755762A14B2E800AF95BB /* VibrationView.swift */; };
+		03A7557E2A1E29D200AF95BB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03A7557C2A1E29D100AF95BB /* DataModel.xcdatamodeld */; };
+		03A755802A1E2E5700AF95BB /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7557F2A1E2E5700AF95BB /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		03A7556E2A14761C00AF95BB /* SoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundView.swift; sourceTree = "<group>"; };
 		03A755742A14B1F600AF95BB /* Ringtones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtones.swift; sourceTree = "<group>"; };
 		03A755762A14B2E800AF95BB /* VibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationView.swift; sourceTree = "<group>"; };
+		03A7557D2A1E29D100AF95BB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		03A7557F2A1E2E5700AF95BB /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +149,9 @@
 		03A755722A14A71900AF95BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				03A7557C2A1E29D100AF95BB /* DataModel.xcdatamodeld */,
 				03A755742A14B1F600AF95BB /* Ringtones.swift */,
+				03A7557F2A1E2E5700AF95BB /* Alarm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A7556B2A13E8D500AF95BB /* AddAlarmView.swift in Sources */,
+				03A7557E2A1E29D200AF95BB /* DataModel.xcdatamodeld in Sources */,
 				03A7553B2A12850800AF95BB /* ContentView.swift in Sources */,
 				03A755632A12862300AF95BB /* AlarmView.swift in Sources */,
 				03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */,
@@ -303,6 +310,7 @@
 				03A755752A14B1F600AF95BB /* Ringtones.swift in Sources */,
 				03A755692A13B84500AF95BB /* AlarmListView.swift in Sources */,
 				03A755392A12850800AF95BB /* ClockApp.swift in Sources */,
+				03A755802A1E2E5700AF95BB /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +635,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03A7557C2A1E29D100AF95BB /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03A7557D2A1E29D100AF95BB /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 03A7557D2A1E29D100AF95BB /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 03A7552D2A12850800AF95BB /* Project object */;
 }

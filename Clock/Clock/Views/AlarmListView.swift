@@ -11,6 +11,19 @@ import SwiftUI
 struct AlarmListView: View {
     @State private var isAddAlarmViewPresented = false
     @State var isAlarmSet = false
+    @State var alarmArr : [Alarm] = [Alarm(time: Date(), cycle: [], label: "", sound: "", snooze: false)]
+    
+    var timeFormatter: DateFormatter {
+           let formatter = DateFormatter()
+           formatter.dateFormat = "h:mm"
+           return formatter
+       }
+    
+    var maFormatter: DateFormatter {
+           let formatter = DateFormatter()
+           formatter.dateFormat = "a"
+           return formatter
+       }
     
     var body: some View {
         NavigationView {
@@ -48,10 +61,12 @@ struct AlarmListView: View {
                         HStack {
                             VStack(alignment: .leading) {
                                 HStack(alignment: .firstTextBaseline) {
-                                    Text("9:00")
-                                        .font(.system(size: 55, weight: .light))
-                                    Text("AM")
-                                        .font(.system(size: 30))
+                                    ForEach(alarmArr.indices, id: \.self) { index in
+                                        Text("\(alarmArr[index].time, formatter: timeFormatter)")
+                                            .font(.system(size: 55, weight: .light))
+                                        Text("\(alarmArr[index].time, formatter: maFormatter)")
+                                            .font(.system(size: 30))
+                                    }
                                 }
                                 Text("Alarm")
                                     .font(.callout)
