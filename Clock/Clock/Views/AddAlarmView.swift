@@ -82,8 +82,6 @@ struct AddAlarmView: View {
 //
 //    static var previews: some View {
 //        AddAlarmView(isAlarmSet: $isAlarmSet)
-//            .environment(\.colorScheme, .dark)
-//            .accentColor(.orange)
 //    }
 //}
 //

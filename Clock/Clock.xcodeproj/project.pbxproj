@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0332D5282A3600BB003952B3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332D5272A3600BB003952B3 /* SearchBar.swift */; };
 		03A755392A12850800AF95BB /* ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755382A12850800AF95BB /* ClockApp.swift */; };
 		03A7553B2A12850800AF95BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7553A2A12850800AF95BB /* ContentView.swift */; };
 		03A7553D2A12850900AF95BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A7553C2A12850900AF95BB /* Assets.xcassets */; };
@@ -21,8 +22,10 @@
 		03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7556E2A14761C00AF95BB /* SoundView.swift */; };
 		03A755752A14B1F600AF95BB /* Ringtones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755742A14B1F600AF95BB /* Ringtones.swift */; };
 		03A755772A14B2E800AF95BB /* VibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755762A14B2E800AF95BB /* VibrationView.swift */; };
-		03A7557E2A1E29D200AF95BB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03A7557C2A1E29D100AF95BB /* DataModel.xcdatamodeld */; };
 		03A755802A1E2E5700AF95BB /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7557F2A1E2E5700AF95BB /* Alarm.swift */; };
+		03A755822A24D41B00AF95BB /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755812A24D41B00AF95BB /* WorldClockView.swift */; };
+		03A755842A24D58300AF95BB /* AddWorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755832A24D58300AF95BB /* AddWorldClockView.swift */; };
+		03A755862A260B7F00AF95BB /* WorldClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A755852A260B7E00AF95BB /* WorldClock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0332D5272A3600BB003952B3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		03A755352A12850800AF95BB /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A755382A12850800AF95BB /* ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockApp.swift; sourceTree = "<group>"; };
 		03A7553A2A12850800AF95BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,8 +64,10 @@
 		03A7556E2A14761C00AF95BB /* SoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundView.swift; sourceTree = "<group>"; };
 		03A755742A14B1F600AF95BB /* Ringtones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtones.swift; sourceTree = "<group>"; };
 		03A755762A14B2E800AF95BB /* VibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationView.swift; sourceTree = "<group>"; };
-		03A7557D2A1E29D100AF95BB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		03A7557F2A1E2E5700AF95BB /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		03A755812A24D41B00AF95BB /* WorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
+		03A755832A24D58300AF95BB /* AddWorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorldClockView.swift; sourceTree = "<group>"; };
+		03A755852A260B7E00AF95BB /* WorldClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +155,9 @@
 		03A755722A14A71900AF95BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				03A7557C2A1E29D100AF95BB /* DataModel.xcdatamodeld */,
 				03A755742A14B1F600AF95BB /* Ringtones.swift */,
 				03A7557F2A1E2E5700AF95BB /* Alarm.swift */,
+				03A755852A260B7E00AF95BB /* WorldClock.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,11 +167,14 @@
 			children = (
 				03A7553A2A12850800AF95BB /* ContentView.swift */,
 				03A755622A12862300AF95BB /* AlarmView.swift */,
+				03A755812A24D41B00AF95BB /* WorldClockView.swift */,
+				03A755832A24D58300AF95BB /* AddWorldClockView.swift */,
 				03A755682A13B84500AF95BB /* AlarmListView.swift */,
 				03A7556A2A13E8D500AF95BB /* AddAlarmView.swift */,
 				03A7556E2A14761C00AF95BB /* SoundView.swift */,
 				03A7556C2A1475A100AF95BB /* RepeatView.swift */,
 				03A755762A14B2E800AF95BB /* VibrationView.swift */,
+				0332D5272A3600BB003952B3 /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,16 +310,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A7556B2A13E8D500AF95BB /* AddAlarmView.swift in Sources */,
-				03A7557E2A1E29D200AF95BB /* DataModel.xcdatamodeld in Sources */,
 				03A7553B2A12850800AF95BB /* ContentView.swift in Sources */,
+				03A755862A260B7F00AF95BB /* WorldClock.swift in Sources */,
 				03A755632A12862300AF95BB /* AlarmView.swift in Sources */,
 				03A7556F2A14761C00AF95BB /* SoundView.swift in Sources */,
 				03A755772A14B2E800AF95BB /* VibrationView.swift in Sources */,
 				03A7556D2A1475A100AF95BB /* RepeatView.swift in Sources */,
+				0332D5282A3600BB003952B3 /* SearchBar.swift in Sources */,
 				03A755752A14B1F600AF95BB /* Ringtones.swift in Sources */,
 				03A755692A13B84500AF95BB /* AlarmListView.swift in Sources */,
 				03A755392A12850800AF95BB /* ClockApp.swift in Sources */,
+				03A755822A24D41B00AF95BB /* WorldClockView.swift in Sources */,
 				03A755802A1E2E5700AF95BB /* Alarm.swift in Sources */,
+				03A755842A24D58300AF95BB /* AddWorldClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +489,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,6 +519,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,19 +649,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		03A7557C2A1E29D100AF95BB /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				03A7557D2A1E29D100AF95BB /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 03A7557D2A1E29D100AF95BB /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 03A7552D2A12850800AF95BB /* Project object */;
 }

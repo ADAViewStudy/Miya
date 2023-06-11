@@ -42,7 +42,5 @@ struct RepeatView_Previews: PreviewProvider {
 
     static var previews: some View {
         RepeatView(selectedDays: $selectedDays)
-            .environment(\.colorScheme, .dark)
-            .accentColor(.orange)
     }
 }

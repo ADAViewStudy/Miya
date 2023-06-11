@@ -89,8 +89,6 @@ struct AlarmListView: View {
         }
         .sheet(isPresented: self.$isAddAlarmViewPresented) {
             AddAlarmView(isAlarmSet: $isAlarmSet)
-                .environment(\.colorScheme, .dark)
-                .accentColor(.orange)
         }
     }
 }
@@ -98,7 +96,5 @@ struct AlarmListView: View {
 struct AlarmListView_Previews: PreviewProvider {
     static var previews: some View {
         AlarmListView()
-            .environment(\.colorScheme, .dark)
-            .accentColor(.orange)
     }
 }

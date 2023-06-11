@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct AlarmView: View {
+
+@State private var selection = 1
+    
     var body: some View {
         NavigationView {
-            TabView {
-                Text("Tab Content 1").tabItem { Label("World Clock", systemImage: "globe")
+            TabView(selection: $selection) {
+                WorldClockView().tabItem { Label("World Clock", systemImage: "globe")
                 }
                 AlarmListView().tabItem { Label("Alarm", systemImage: "alarm.fill")
                 }
@@ -26,8 +29,6 @@ struct AlarmView: View {
     struct AlarmView_Previews: PreviewProvider {
         static var previews: some View {
             AlarmView()
-                .environment(\.colorScheme, .dark)
-                .accentColor(.orange)
         }
     }
 }

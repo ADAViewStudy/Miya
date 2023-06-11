@@ -42,7 +42,5 @@ struct SoundView: View {
 struct SoundView_Previews: PreviewProvider {
     static var previews: some View {
         SoundView()
-            .environment(\.colorScheme, .dark)
-            .accentColor(.orange)
     }
 }

@@ -12,8 +12,8 @@ struct ClockApp: App {
     var body: some Scene {
         WindowGroup {
             AlarmView()
-                .environment(\.colorScheme, .dark)
-                .accentColor(.orange)
+//                .environment(\.colorScheme, .dark)
+//                .accentColor(.orange)
         }
     }
 }
